@@ -66,8 +66,7 @@ public class Company {
                     String month = data[1];
                     for (int x = 2; x < data.length; x++) {
                         double price = new Double(data[x]).doubleValue();
-                        CompanyDTO dto = new CompanyDTO(headers[x], year, month, price);
-                        companyDTOs.add(dto);
+                        companyDTOs.add(new CompanyDTO(headers[x], year, month, price));
                     }
                 }
             }
