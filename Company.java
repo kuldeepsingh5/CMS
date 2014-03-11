@@ -48,7 +48,7 @@ public class Company {
         Scanner s = null;
         try {
             companyDTOs = new ArrayList<CompanyDTO>();
-            File f = new File("/home/kuldeep/company.csv");
+            File f = new File("company.csv");
             System.out.println(f.getAbsolutePath());
             s = new Scanner(new FileInputStream(f));
             String[] headers = readLine(s);
